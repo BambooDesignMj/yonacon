@@ -125,3 +125,8 @@
 127.0.0.1 - - [20/Mar/2022:15:28:12 +0900] "POST /wp-cron.php?doing_wp_cron=1647757692.9751889705657958984375 HTTP/1.0" 200 -
 127.0.0.1 - - [20/Mar/2022:15:28:14 +0900] "GET /wp-admin/admin-ajax.php?action=wp-compression-test&test=2&_ajax_nonce=8e933bead3&1647757694007 HTTP/1.0" 200 572
 127.0.0.1 - - [20/Mar/2022:15:28:27 +0900] "GET /wp-admin/admin-ajax.php?action=wp-compression-test&test=yes&_ajax_nonce=8e933bead3&1647757707850 HTTP/1.0" 200 1
+127.0.0.1 - - [20/Mar/2022:15:29:10 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
+127.0.0.1 - - [20/Mar/2022:15:29:13 +0900] "POST /wp-cron.php?doing_wp_cron=1647757753.1180899143218994140625 HTTP/1.0" 200 -
+127.0.0.1 - - [20/Mar/2022:15:31:10 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
+127.0.0.1 - - [20/Mar/2022:15:33:10 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
+127.0.0.1 - - [20/Mar/2022:15:34:24 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
