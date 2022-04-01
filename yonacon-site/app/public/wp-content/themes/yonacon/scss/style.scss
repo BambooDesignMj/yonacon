@@ -2,6 +2,6 @@
 
 @use "settings";
 @use "../css/sanitize-cm.css";
-@use "general";
-@use "header";
-@use "footer"
+@use "_general";
+@use "_header";
+@use "_footer";
