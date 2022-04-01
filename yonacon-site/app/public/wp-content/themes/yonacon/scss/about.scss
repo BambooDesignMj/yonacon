@@ -1,12 +1,17 @@
 @use "style"as *;
+@use "general"as *;
+
+html {
+  margin: 0;
+}
 
 main {
   background: $base-yellow;
+  margin: 0;
 }
 
 .hoge {
   display: block;
-  display: inline-block;
-  display: flex;
-  display: grid;
+  height: 3000px;
+  background: aliceblue;
 }

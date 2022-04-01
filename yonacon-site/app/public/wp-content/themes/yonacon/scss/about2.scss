@@ -1,0 +1,9 @@
+@use "style"as *;
+
+main {
+  background: $base-yellow;
+}
+
+.hoge {
+  display: block;
+}
