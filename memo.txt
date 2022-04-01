@@ -1,0 +1,7 @@
+yonacon管理画面
+
+username
+yonacon
+
+pass
+yonagoha24
