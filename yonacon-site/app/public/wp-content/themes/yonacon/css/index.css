@@ -587,6 +587,9 @@ address {
 }
 
 /*!
+  引数、変数、フォントに関するcss
+*/
+/*!
   引数
   mixin
 */
@@ -598,4 +601,4 @@ address {
   フォント
   fonts
 */
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
