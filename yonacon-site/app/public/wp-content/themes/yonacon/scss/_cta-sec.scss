@@ -1,0 +1,66 @@
+/*!---------------------------------
+    変数
+---------------------------------*/
+
+$base-green: #31a6a2;
+$base-yellow: #fffaec;
+$base-pink:#ff6c88;
+
+
+/*!---------------------------------
+
+---------------------------------*/
+
+.breadcrumb-area {
+  background: #fff;
+  margin: calc((120 / 1920)*100vw) 0;
+
+  .sub-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  & p {
+    font-size: 30px;
+    font-size: clamp(((30 * 0.7)*1px), calc((30 / 1920)*100vw), 30px);
+    padding: calc((30 / 1920)*100vw) 0;
+  }
+}
+
+.cta-sec-btn {
+  text-align: center;
+  margin-bottom: calc((120 / 1920)*100vw);
+
+  & p {
+    color: $base-green;
+  }
+
+  & a {
+    background: $base-pink;
+    border-radius: 42px;
+    width: calc((412 / 1920)*100vw);
+    height: calc((84 / 1920)*100vw);
+    display: inline-grid;
+    place-items: center;
+
+    & h3 {
+      color: #fff;
+      margin: 0;
+      line-height:1;
+      padding-top: 0.1em;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        margin-left: calc((50 / 1920)*100vw);
+        margin-top: -4px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
