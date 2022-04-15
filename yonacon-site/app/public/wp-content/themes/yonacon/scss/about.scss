@@ -10,8 +10,63 @@ main {
   margin: 0;
 }
 
-.hoge {
-  display: block;
-  height: 3000px;
-  background: aliceblue;
+.about {
+  & h2 {
+    text-align: center;
+  }
+}
+
+
+.about-sec1 {
+  & h2{
+    margin-bottom: calc((114 / 1920)*100vw);
+  }
+  & .sec-lead {
+    text-align: center;
+    margin-bottom: calc((110 / 1920)*100vw);
+  }
+  &-info{
+    border: 2px solid #f3dd24;
+    & ul{
+      display: flex;
+      padding: calc((40 / 1920)*100vw) calc((64 / 1920)*100vw);
+      justify-content: space-between;
+    }
+  }
+}
+
+
+.about-sec2{
+  & .content-half {
+
+    &-item {
+      .img-box {
+        margin: calc((120 / 1920)*100vw) auto;
+
+        &.about-yona {
+          width: calc((344 / (1430 / 2))*100%);
+        }
+
+        &.about-logo {
+          width: calc((458 / (1430 / 2))*100%);
+        }
+      }
+
+      & a {
+        color: $base-green;
+        font-size: 18px;
+        font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
+
+        & span {
+          font-size: 24px;
+          font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+        }
+      }
+    }
+  }
+
+}
+
+.yona-logo {
+  margin: calc((120 / 1920)*100vw) 0;
 }

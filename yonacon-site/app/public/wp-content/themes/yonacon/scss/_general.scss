@@ -1,5 +1,5 @@
 /*!
-  引数、変数、フォント、ボタンに関するcss
+  引数、変数、フォント、リンク、ボタンに関するcss
 */
 
 
@@ -59,28 +59,110 @@ $xl: 1600px;
 }
 
 
-/*!
-  変数
-  variables
-*/
+/*!---------------------------------
+    変数
+---------------------------------*/
+
 $base-green: #31a6a2;
 $base-yellow: #fffaec;
 
-
-/*!
-  フォント
-  fonts
-*/
-
-/*!
-  ボタン
-  button
-*/
+$content-width: 1640px;
+$sub-content-width: 1430px;
 
 
-/*!
-  共通
-*/
+
+
+/*!---------------------------------
+    フォント
+---------------------------------*/
+h1{
+  font-size: 72px;
+  font-size: clamp(((72 * 0.7)*1px), calc((72 / 1920)*100vw), 72px);
+  color: $base-green;
+}
+
+h2{
+  font-size: 48px;
+  font-size: clamp(((48 * 0.7)*1px), calc((48 / 1920)*100vw), 48px);
+  color: $base-green;
+}
+
+h3{
+  font-size: 36px;
+  font-size: clamp(((36 * 0.7)*1px), calc((36 / 1920)*100vw), 36px);
+  color: $base-green;
+}
+
+h4{
+  font-size: 30px;
+  font-size: clamp(((30 * 0.7)*1px), calc((30 / 1920)*100vw), 30px);
+  color: $base-green;
+}
+
+h5{
+  font-size: 24px;
+  font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+}
+
+p{
+  font-size: 18px;
+  font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
+  color: #333333;
+}
+
+.p-mini{
+  font-size: 16px;
+  font-size: clamp(((16 * 0.7)*1px), calc((16 / 1920)*100vw), 16px);
+  color: #333333;
+}
+
+
+/*!---------------------------------
+    リンク　ボタン
+---------------------------------*/
+a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.8;
+  @include sp{
+    pointer-events: none;
+  }
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transition: 0.4s;
+
+  @include sp {
+    content: none;
+  }
+}
+
+a:hover:before {
+  transform: scale(1);
+
+  @include sp {
+    pointer-events: none;
+  }
+}
+/*! 画像がリンクの場合
+====================================================*/
+a.img:before{
+  content: none;
+}
+
 
 /*! 電話
 ====================================================*/
@@ -90,6 +172,7 @@ $base-yellow: #fffaec;
     cursor: default;
   }
 }
+
 
 /*! pc sp
 ====================================================*/
