@@ -90,7 +90,8 @@ h2 {
   font-size: 48px;
   font-size: clamp(((48 * 0.5)*1px), calc((48 / 1920)*100vw), 48px);
   color: $base-green;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-family:Heisei Kaku Gothic Std W7
 }
 
 h3 {
