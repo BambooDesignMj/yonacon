@@ -66,6 +66,34 @@
 }
 
 /*!---------------------------------
+    index-content-sidebar
+---------------------------------*/
+.index-content-sidebar{
+  display: flex;
+}
+
+.index-content{
+  width:  calc(((48 + 1376) / 1920)*100vw);
+  padding-left:  calc((48 / 1920)*100vw);;
+}
+
+
+/*! sidebar
+====================================================*/
+.sidebar {
+  width: calc((450 / 1920)*100vw);
+  margin-left: auto;
+  background: #fff;
+  right: 0;
+  &-content{
+    position: sticky;
+    top: 0;
+  }
+}
+
+
+
+/*!---------------------------------
     works
 ---------------------------------*/
 
@@ -143,13 +171,3 @@
   ;
 }
 
-/*! sidebar
-====================================================*/
-.sidebar {
-  width: calc((450 / 1920)*100vw);
-  margin-left: auto;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  right: 0;
-}
