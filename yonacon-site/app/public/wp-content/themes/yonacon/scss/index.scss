@@ -1,1 +1,155 @@
 @use "style"as *;
+@use "general"as *;
+
+/*!---------------------------------
+   共通
+---------------------------------*/
+.index-inner {
+  padding-left: calc((142 / 1920)*100vw);
+  padding-right: calc((450 / 1920)*100vw);
+}
+
+.index-sec-ttl {
+  & h1{
+    margin:  calc((20 / 1920)*100vw) 0;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  & img {
+    width: calc((358 / 1920)*100vw);
+  }
+
+  & h5 {
+    color: $base-green;
+    margin: 0;
+  }
+}
+
+/*!---------------------------------
+    
+---------------------------------*/
+.mv {
+  // height: calc(95vh - calc((140 / 1920)*100vw));
+}
+
+.post-mv {
+  margin-top: 40px;
+
+  &-inner {
+    display: flex;
+    gap: calc((94 / 1920)*100vw);
+    padding-bottom: calc((180 / 1920)*100vw);
+    padding-left: calc((142 / 1920)*100vw);
+  }
+
+  &-l {
+    & p {
+      font-size: 24px;
+      font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+      width: calc((727 / 1920)*100vw);
+    }
+  }
+
+  &-r {
+    display: flex;
+    justify-content: left;
+
+    &-about {
+      width: calc((346 / 1920)*100vw);
+      margin-top: -21%;
+    }
+
+    &-dhw {
+      width: calc((281 / 1920)*100vw);
+    }
+  }
+}
+
+/*!---------------------------------
+    works
+---------------------------------*/
+
+.works {
+  background: $base-yellow;
+
+  & .inner {
+    padding-top: calc((156 / 1920)*100vw);
+    padding-bottom: calc((230 / 1920)*100vw);
+  }
+
+}
+
+/*!---------------------------------
+    process
+---------------------------------*/
+.index-process-inner {
+  padding-right: calc((495 / 1920)*100vw);
+}
+
+.step-box {
+  display: flex;
+  background: $base-yellow;
+  padding-left: calc((92 / 1920)*100vw);
+  width: 100%;
+  padding-top: calc((16 / 1920)*100vw);
+  margin-bottom: calc((20 / 1920)*100vw);
+  ;
+
+  &-l {
+    margin-bottom: calc((90 / 1920)*100vw);
+    margin-right: calc((66 / 1920)*100vw);
+
+    & h2 {
+      margin-top: 0;
+    }
+
+    & img {
+      width: calc((140 / 1920)*100vw);
+    }
+  }
+
+  &-r {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/*! step01 triangle
+====================================================*/
+.step01 {
+  position: relative;
+  margin-top: calc((275 / 1920)*100vw);
+
+  &::before {
+    display: inline-block;
+    content: "";
+    top: calc(((275 / 1920)*100vw)*-1);
+    left: 0;
+    position: absolute;
+    height: calc((275 / 1920)*100vw);
+    background-image: url(../img/step01-bg.svg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+
+/*! 画像の右余白調整
+====================================================*/
+.step01-illu {
+  padding-right: calc((86 / 1920)*100vw);
+  ;
+}
+
+/*! sidebar
+====================================================*/
+.sidebar {
+  width: calc((450 / 1920)*100vw);
+  margin-left: auto;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  right: 0;
+}

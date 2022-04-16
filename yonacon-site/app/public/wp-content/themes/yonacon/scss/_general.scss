@@ -78,35 +78,35 @@ $sub-content-width: 1430px;
 ---------------------------------*/
 h1 {
   font-size: 72px;
-  font-size: clamp(((72 * 0.7)*1px), calc((72 / 1920)*100vw), 72px);
+  font-size: clamp(((72 * 0.5)*1px), calc((72 / 1920)*100vw), 72px);
   color: $base-green;
   letter-spacing: 0.05em
 }
 
 h2 {
   font-size: 48px;
-  font-size: clamp(((48 * 0.7)*1px), calc((48 / 1920)*100vw), 48px);
+  font-size: clamp(((48 * 0.5)*1px), calc((48 / 1920)*100vw), 48px);
   color: $base-green;
   letter-spacing: 0.05em
 }
 
 h3 {
   font-size: 36px;
-  font-size: clamp(((36 * 0.7)*1px), calc((36 / 1920)*100vw), 36px);
+  font-size: clamp(((36 * 0.5)*1px), calc((36 / 1920)*100vw), 36px);
   color: $base-green;
   letter-spacing: 0.05em
 }
 
 h4 {
   font-size: 30px;
-  font-size: clamp(((30 * 0.7)*1px), calc((30 / 1920)*100vw), 30px);
+  font-size: clamp(((30 * 0.5)*1px), calc((30 / 1920)*100vw), 30px);
   color: $base-green;
   letter-spacing: 0.05em
 }
 
 h5 {
   font-size: 24px;
-  font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+  font-size: clamp(((24 * 0.5)*1px), calc((24 / 1920)*100vw), 24px);
   letter-spacing: 0.05em
 }
 
@@ -124,6 +124,12 @@ p {
   color: #333333;
   letter-spacing: 0.05em;
   line-height: 1.75;
+}
+
+p {
+  & span {
+    display: inline-block;
+  }
 }
 
 

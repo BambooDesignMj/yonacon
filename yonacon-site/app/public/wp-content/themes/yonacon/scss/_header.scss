@@ -15,6 +15,10 @@
   top: calc(((calc((90 / 1920)*100vw))) - (calc((140 / 1920)*100vw)));
   height: calc((140 / 1920)*100vw);
 
+  @include sp {
+    height: 50px;
+  }
+
   & .nav {
     display: flex;
     justify-content: space-between;
@@ -85,22 +89,25 @@
     width: 100%;
 
     & h1 {
-      width: calc((149 / 400)*100vw);
+      width: 149px;
+      height: 100%;
       margin: 0;
       display: flex;
       align-items: center;
 
-
       & a {
         @include sp {
-          padding: 10px 0;
-          max-height: 70px;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
         }
 
         & img {
           @include sp {
-            vertical-align: middle;
-            max-height: 50px;
+            max-width: 100%;
+            height: 30px;
+            position: fixed;
+            top: 15px;
           }
         }
       }
@@ -111,8 +118,7 @@
       position: fixed;
       z-index: 3;
       right: 13px;
-      top: 12px;
-      top: 4px;
+      top: 10px;
       width: 42px;
       height: 42px;
       cursor: pointer;
