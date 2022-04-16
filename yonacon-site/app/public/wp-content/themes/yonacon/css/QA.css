@@ -613,6 +613,9 @@ h1 {
   font-size: clamp(((72 * 0.5)*1px), calc((72 / 1920)*100vw), 72px);
   color: #31a6a2;
   letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {
@@ -620,6 +623,7 @@ h2 {
   font-size: clamp(((48 * 0.5)*1px), calc((48 / 1920)*100vw), 48px);
   color: #31a6a2;
   letter-spacing: 0.05em;
+  font-family: Heisei Kaku Gothic Std W7;
 }
 
 h3 {
