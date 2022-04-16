@@ -91,27 +91,38 @@ h2 {
   font-size: clamp(((48 * 0.5)*1px), calc((48 / 1920)*100vw), 48px);
   color: $base-green;
   letter-spacing: 0.05em;
-  font-family:Heisei Kaku Gothic Std W7
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h3 {
   font-size: 36px;
   font-size: clamp(((36 * 0.5)*1px), calc((36 / 1920)*100vw), 36px);
   color: $base-green;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h4 {
   font-size: 30px;
   font-size: clamp(((30 * 0.5)*1px), calc((30 / 1920)*100vw), 30px);
   color: $base-green;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h5 {
   font-size: 24px;
   font-size: clamp(((24 * 0.5)*1px), calc((24 / 1920)*100vw), 24px);
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 p {
@@ -120,6 +131,9 @@ p {
   color: #333333;
   letter-spacing: 0.05em;
   line-height: 1.75;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .p-mini {
@@ -128,6 +142,9 @@ p {
   color: #333333;
   letter-spacing: 0.05em;
   line-height: 1.75;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 p {
