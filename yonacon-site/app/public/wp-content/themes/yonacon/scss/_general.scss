@@ -80,7 +80,10 @@ h1 {
   font-size: 72px;
   font-size: clamp(((72 * 0.5)*1px), calc((72 / 1920)*100vw), 72px);
   color: $base-green;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {
