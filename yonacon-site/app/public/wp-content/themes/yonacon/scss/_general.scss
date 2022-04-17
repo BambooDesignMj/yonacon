@@ -275,6 +275,9 @@ a:hover:before {
 }
 
 //ドアボタン　竹歳
+.door_btn {
+  transition: 0.5;
+}
 .door_btn:hover {
   content: url(./door_op.png);
 }
