@@ -274,6 +274,11 @@ a:hover:before {
   transform:scale(1, 1);
 }
 
+//ドアボタン　竹歳
+.door_btn:hover {
+  content: url(./door_op.png);
+}
+
 /*! 画像がリンク、ボタンの場合
 ====================================================*/
 a.img:before {
