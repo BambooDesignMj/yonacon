@@ -261,12 +261,10 @@ a:hover {
   transform: scale(1, 1);
 }
 
-//ドアボタン　竹歳
+//ドアボタン
 .door_btn {
-  
-
   &_wrapper {
-    
+
     & a {
       display: flex;
       height: calc((102 / 1920)*100vw);
@@ -309,14 +307,44 @@ a:hover {
 
 .door_btn {
   transition: 0.5s;
+  position: relative;
+  width: 24px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+
+  img:nth-of-type(1) {
+    opacity: 0;
+  }
+}
+
+.door_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .door_btn:hover {
-  content: url(../img/door_cl.png);
+  HEAD content: url(../img/door_cl.png);
 }
 
 .door_btn_wrapper:hover .door_btn {
   content: url(../img/door_cl.png);
+
+  img:nth-of-type(1) {
+    opacity: 1;
+  }
+
+  img:nth-of-type(2) {
+    opacity: 0;
+  }
+
 }
 
 /*! 画像がリンク、ボタンの場合
