@@ -8,13 +8,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/index.css">
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
         kitId: 'vkh0ows',
         scriptTimeout: 3000,
         async: true
       },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
 </head>
@@ -83,7 +83,7 @@
     <div class="index-content-sidebar">
       <div class="index-content">
         <div class="works">
-          <div class="index-inner yello-bg">
+          <div class="index-inner">
             <div class="index-sec-ttl">
               <img src="./img/works.png" alt="">
               <h1>制作実績</h1>
@@ -105,16 +105,101 @@
             </div>
             <div class="step-box step01">
               <div class="step-box-l">
-                <h2><img src="./img/step1.png" alt=""></h2>
+                <h2><img src="./img/step01-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step01.png" alt="" class="step01-illu">
+                <img src="./img/step01-illust.png" alt="" class="step01-illust">
+              </div>
+            </div>
+            <!-- /.step01 -->
+            <div class="step-box step02">
+              <div class="step-box-l">
+                <h2><img src="./img/step02-ttl.png" alt=""></h2>
+              </div>
+              <div class="step-box-r">
+                <p>相談後、お見積もりをいたします。</p>
+                <img src="./img/step02-illust.png" alt="" class="step02-illust">
+              </div>
+            </div>
+            <!-- /.step02 -->
+            <div class="step-box step03">
+              <div class="step-box-l">
+                <h2><img src="./img/step03-ttl.png" alt=""></h2>
+              </div>
+              <div class="step-box-r">
+                <p>相談後、お見積もりをいたします。</p>
+                <img src="./img/step03-illust.png" alt="" class="step01-illust">
+              </div>
+            </div>
+            <!-- /.step03 -->
+            <div class="step-box step04">
+              <div class="step-box-l">
+                <h2><img src="./img/step04-ttl.png" alt=""></h2>
+              </div>
+              <div class="step-box-r">
+                <p>相談後、お見積もりをいたします。</p>
+                <img src="./img/step04-illust.png" alt="" class="step04-illust">
+              </div>
+            </div>
+            <!-- /.step04 -->
+            <div class="step-box step05">
+              <div class="step-box-l">
+                <h2><img src="./img/step05-ttl.png" alt=""></h2>
+              </div>
+              <div class="step-box-r">
+                <p>相談後、お見積もりをいたします。</p>
+                <img src="./img/step05-illust.png" alt="" class="step05-illust">
+              </div>
+            </div>
+            <!-- /.step04 -->
+          </div>
+        </div>
+        <!-- /.process -->
+        <div class="cta-sec">
+          <img src="./img/cta-b4-sassoku.png" alt="" class="ballon">
+          <a href="#" class="contact_btn bgleft">
+            <div>お問い合わせ<span>&rang;</span></div>
+          </a>
+        </div>
+        <!-- /.cta-sec -->
+        <div class="price">
+          <div class="index-inner price-index-inner">
+            <div class="index-sec-ttl">
+              <img src="./img/priceflow.png" alt="">
+              <h1>料金・詳しい流れ</h1>
+              <p>米子コンテンツ工場では明確な料金表や料金プランを提示しておりません。<br>
+                だからこそ、まずは丁寧な打ち合わせをもとにお見積もりをさせていただきます。</p>
+            </div>
+            <div class="price-content content-half">
+              <div class="content-half-item">
+                <img src="./img/price-kuwashii.png" alt="" class="price-ballon">
+                <div class="index-thumbnail-frame">
+                  <div class="index-thumbnail">
+                    <img src="./img/index-thumbnail.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="content-half-item">
+                <img src="./img/price-ryoukin.png" alt="" class="price-ballon">
+                <div class="index-thumbnail-frame">
+                  <div class="index-thumbnail">
+                    <img src="./img/index-thumbnail.png" alt="">
+                  </div>
+                </div>
+                <div class="door_btn_wrapper">
+                  <a href="#">
+                    <div class="door_btn_txt">
+                      <p>詳しい流れ<span>についてはこちら</span></p>
+                      <img src="./img/door_btn_arrow.png" alt="">
+                    </div>
+                    <img src="img/door_op.png" alt="door_close" class="door_btn">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /.process -->
       </div>
       <!-- /.index-content -->
       <aside class="sidebar">

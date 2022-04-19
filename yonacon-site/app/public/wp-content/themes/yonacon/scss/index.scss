@@ -6,15 +6,19 @@
 ---------------------------------*/
 .index-inner {
   padding-left: calc((142 / 1920)*100vw);
-  padding-right: calc((450 / 1920)*100vw);
+  // padding-right: calc((450 / 1920)*100vw);
+  width: calc(((48 + 1376) / 1920)*100vw);
 }
 
 .index-sec-ttl {
-  & h1{
-    margin:  calc((20 / 1920)*100vw) 0;
+  // padding-left: calc((142 / 1920)*100vw);
+
+  & h1 {
+    margin: calc((20 / 1920)*100vw) 0;
     line-height: 1;
     margin-bottom: 0;
   }
+
   & img {
     width: calc((358 / 1920)*100vw);
   }
@@ -24,6 +28,50 @@
     margin: 0;
   }
 }
+
+.cta-sec {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc((412 / 1920)*100vw);
+  margin: 0 auto calc((105 / 1920)*100vw);
+  ;
+
+  & .ballon {
+    width: calc((288 / 412)*100%);
+    display: inline-block;
+    margin: 0 auto 10px;
+  }
+
+  & .contact_btn {
+    padding: calc((24 / 1920)*100vw) 0;
+    text-align: center;
+
+    & div {
+      font-size: 36px;
+      font-size: clamp(((36 * 0.7)*1px), calc((36 / 1920)*100vw), 36px);
+      line-height: 1;
+
+      & span {
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+.index-thumbnail {
+  &-frame {
+    border: solid 3px $base-green;
+    width: calc((598 / 1920)*100vw);
+    margin-bottom: calc((30 / 1920)*100vw);
+    background: #fff;
+
+    & img {
+      padding: 26px 28px;
+    }
+  }
+}
+
 
 /*!---------------------------------
     
@@ -68,13 +116,14 @@
 /*!---------------------------------
     index-content-sidebar
 ---------------------------------*/
-.index-content-sidebar{
-  display: flex;
+.index-content-sidebar {
+  position: relative;
 }
 
-.index-content{
-  width:  calc(((48 + 1376) / 1920)*100vw);
-  padding-left:  calc((48 / 1920)*100vw);;
+.index-content {
+  // width: calc(((48 + 1376) / 1920)*100vw);
+  // padding-left: calc((48 / 1920)*100vw);
+
 }
 
 
@@ -85,7 +134,10 @@
   margin-left: auto;
   background: #fff;
   right: 0;
-  &-content{
+  position: absolute;
+  top: 0;
+
+  &-content {
     position: sticky;
     top: 0;
   }
@@ -99,6 +151,7 @@
 
 .works {
   background: $base-yellow;
+  margin-bottom: calc((126 / 1920)*100vw);
 
   & .inner {
     padding-top: calc((156 / 1920)*100vw);
@@ -111,13 +164,22 @@
     process
 ---------------------------------*/
 .index-process-inner {
-  padding-right: calc((495 / 1920)*100vw);
+  padding-left: 0;
+}
+
+.process {
+  margin-bottom: calc((70 / 1920)*100vw);
+
+  & .index-sec-ttl {
+    padding-left: calc((142 / 1920)*100vw);
+  }
 }
 
 .step-box {
   display: flex;
   background: $base-yellow;
-  padding-left: calc((92 / 1920)*100vw);
+  padding-left: calc((90 / 1920)*100vw);
+  margin-left: calc((48 / 1920)*100vw);
   width: 100%;
   padding-top: calc((16 / 1920)*100vw);
   margin-bottom: calc((20 / 1920)*100vw);
@@ -143,6 +205,34 @@
   }
 }
 
+/*!---------------------------------
+    price
+---------------------------------*/
+.price {
+  padding-bottom: calc((114 / 1920)*100vw);
+  background: $base-yellow;
+
+
+  & .index-sec-ttl {
+    margin-bottom: calc((80 / 1920)*100vw);
+
+    & h1 {
+      margin-bottom: calc((98 / 1920)*100vw);
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+
+    & .content-half-item {
+      width: calc((598 / 1920)*100vw);
+    }
+  }
+
+}
+
+
 /*! step01 triangle
 ====================================================*/
 .step01 {
@@ -166,8 +256,7 @@
 
 /*! 画像の右余白調整
 ====================================================*/
-.step01-illu {
+.step01-illust {
   padding-right: calc((86 / 1920)*100vw);
   ;
 }
-
