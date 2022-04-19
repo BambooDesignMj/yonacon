@@ -263,49 +263,6 @@ a:hover {
 
 //ドアボタン
 .door_btn {
-  &_wrapper {
-
-    & a {
-      display: flex;
-      height: calc((102 / 1920)*100vw);
-
-      &:hover {
-        text-decoration: none;
-      }
-
-      & p {
-        font-size: 24px;
-        font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
-        color: $base-green;
-        letter-spacing: -0.9px;
-        margin: 0;
-        margin-bottom: -0.8em;
-
-        & span {
-          display: block;
-          font-size: 18px;
-          font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
-        }
-      }
-
-    }
-  }
-
-  &_txt {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-
-    & img {
-      display: block;
-      width: calc((161 / 1920)*100vw);
-      margin-right: 0.5em;
-    }
-  }
-
-}
-
-.door_btn {
   transition: 0.5s;
   position: relative;
   width: 24px;
@@ -331,21 +288,9 @@ a:hover {
 }
 
 .door_btn:hover {
-  HEAD content: url(../img/door_cl.png);
+  content: url(../img/door_op.png);
 }
 
-.door_btn_wrapper:hover .door_btn {
-  content: url(../img/door_cl.png);
-
-  img:nth-of-type(1) {
-    opacity: 1;
-  }
-
-  img:nth-of-type(2) {
-    opacity: 0;
-  }
-
-}
 
 /*! 画像がリンク、ボタンの場合
 ====================================================*/

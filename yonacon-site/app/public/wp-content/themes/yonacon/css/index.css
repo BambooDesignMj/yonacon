@@ -788,56 +788,33 @@ a:hover {
           transform: scale(1, 1);
 }
 
-.door_btn_wrapper a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: calc((102 / 1920)*100vw);
-}
-.door_btn_wrapper a:hover {
-  text-decoration: none;
-}
-.door_btn_wrapper a p {
-  font-size: 24px;
-  font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
-  color: #31a6a2;
-  letter-spacing: -0.9px;
-  margin: 0;
-  margin-bottom: -0.8em;
-}
-.door_btn_wrapper a p span {
-  display: block;
-  font-size: 18px;
-  font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
-}
-.door_btn_txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.door_btn_txt img {
-  display: block;
-  width: calc((161 / 1920)*100vw);
-  margin-right: 0.5em;
-}
-
 .door_btn {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
+  width: 24px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+}
+.door_btn img:nth-of-type(1) {
+  opacity: 0;
+}
+
+.door_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .door_btn:hover {
-  content: url(../img/door_cl.png);
-}
-
-.door_btn_wrapper:hover .door_btn {
-  content: url(../img/door_cl.png);
+  content: url(../img/door_op.png);
 }
 
 /*! 画像がリンク、ボタンの場合
@@ -1421,6 +1398,66 @@ a.btn::before {
 }
 .index-thumbnail-frame img {
   padding: 26px 28px;
+}
+
+.door_btn {
+  width: auto;
+  height: auto;
+}
+.door_btn_wrapper {
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 30px;
+}
+.door_btn_wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc((102 / 1920)*100vw);
+}
+.door_btn_wrapper a:hover {
+  text-decoration: none;
+}
+.door_btn_wrapper a p {
+  font-size: 24px;
+  font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+  color: #31a6a2;
+  letter-spacing: -0.9px;
+  margin: 0;
+  margin-bottom: -0.8em;
+}
+.door_btn_wrapper a p span {
+  display: block;
+  font-size: 18px;
+  font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
+}
+.door_btn_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.door_btn_txt img {
+  display: block;
+  width: calc((161 / 1920)*100vw);
+  margin-right: 0.5em;
+}
+
+.door_btn_wrapper:hover .door_btn {
+  content: url(../img/door_op.png);
+}
+.door_btn_wrapper:hover .door_btn img:nth-of-type(1) {
+  opacity: 1;
+}
+.door_btn_wrapper:hover .door_btn img:nth-of-type(2) {
+  opacity: 0;
 }
 
 /*!---------------------------------
