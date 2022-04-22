@@ -661,7 +661,6 @@ p {
   font-size: 18px;
   font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
   color: #333333;
-  letter-spacing: 0.05em;
   line-height: 1.75;
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 500;
@@ -1331,9 +1330,11 @@ a.btn::before {
           align-items: center;
 }
 .footer .copyright {
+  text-align: center;
+}
+.footer .copyright p {
   color: #fff;
   font-size: 18px;
   font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
-  text-align: center;
 }
 /*# sourceMappingURL=QA.css.map */

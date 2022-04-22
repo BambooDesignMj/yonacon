@@ -74,9 +74,11 @@
   }
 
   & .copyright {
-    color: #fff;
-    font-size: 18px;
-    font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
     text-align: center;
+    & p{
+      color: #fff;
+      font-size: 18px;
+      font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
+    }
   }
 }

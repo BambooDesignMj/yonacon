@@ -71,10 +71,27 @@
         </div>
         <div class="post-mv-r">
           <div class="post-mv-r-about">
-            <img src="./img/btn-about.png" alt="">
+            <div class="door_btn_wrapper">
+              <img src="./img/cta-b4-motto.png" alt="" class="cta-b4-motto">
+              <a href="#">
+                <div class="door_btn_txt">
+                  <p>米コン<span>についてはこちら</span></p>
+                  <img src="./img/door_btn_arrow.png" alt="">
+                </div>
+                <img src="img/door_cl.png" alt="door_close" class="door_btn">
+              </a>
+            </div>
           </div>
           <div class="post-mv-r-dhw">
-            <img src="./img/btn-dhw.png" alt="">
+            <div class="door_btn_wrapper">
+              <a href="#">
+                <div class="door_btn_txt">
+                  <img src="./img/logo_yonago_orange.png" alt="" class="door_btn-dhw">
+                  <img src="./img/door_btn_arrow.png" alt="">
+                </div>
+                <img src="img/door_cl.png" alt="door_close" class="door_btn">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -209,20 +226,121 @@
             </div>
           </div>
         </div>
+        <!-- /.price -->
+        <div class="member">
+          <div class="index-inner member-index-inner">
+            <div class="index-sec-ttl">
+              <img src="./img/member.png" alt="">
+              <h1>メンバー</h1>
+              <p>米子コンテンツ工場にはさまざまなメンバーが所属しています。</p>
+            </div>
+            <div class="member-content content-half">
+              <div class="index-thumbnail-frame">
+                <div class="index-thumbnail">
+                  <img src="./img/member-thumbnail.png" alt="">
+                </div>
+              </div>
+              <div class="door_btn_wrapper">
+                <a href="#">
+                  <div class="door_btn_txt">
+                    <p>メンバー一覧<span>についてはこちら</span></p>
+                    <img src="./img/door_btn_arrow.png" alt="">
+                  </div>
+                  <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.member -->
       </div>
       <!-- /.index-content -->
       <aside class="sidebar">
         <div class="sidebar-content">
           <div class="sidebar-search">
             <h5>検索</h5>
+            <form method="get" action="#" class="search_container">
+              <input type="text" size="25" placeholder="キーワード検索">
+              <input type="submit" value="">
+            </form>
+          </div>
+          <div class="sidebar-blog">
+            <div class="sidebar-blog-new">
+              <h5>ブログ（新着順）</h5>
+              <ol>
+                <li>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>ああああああああああああああああああああ
+                  </p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <p></p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <p></p>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       </aside>
       <!-- / aside -->
     </div>
     <!-- /.index-content-sidebar -->
+    <div class="index-bottom-cta">
+      <div class="index-bottom-cta-inner">
+        <div class="cta-sec">
+          <img src="./img/cta-b4-yoshi.png" alt="" class="ballon">
+          <a href="#" class="contact_btn bgleft">
+            <div>お問い合わせ<span>&rang;</span></div>
+          </a>
+        </div>
+        <div class="name-address">
+          <p><img src="./img/logo-horizontal.svg" alt=""></p>
+          <address>〒683-0812<br>
+            鳥取県米子市角盤町1-55-2<br>
+            中海テレビ放送センタービル2階<br>
+            デジタルハリウッドSTUDIO米子内</address>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer-upp">
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#">米コンについて</a></li>
+          <li><a href="#">お悩み相談室</a></li>
+          <li><a href="#">制作実績</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">メンバー</a></li>
+          <li><a href="#">よくある質問</a></li>
+        </ul>
+      </div>
+      <div class="footer-low">
+        <div class="footer-low-l">
+          <ul>
+            <li><a href="#" class="img"><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href="#" class="img"><img src="./img/instagram.png" alt=""></a></li>
+            <li class="email"><a href="mailto:yonagofactory@gmail.com">yonagofactory@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-low-r">
+          <a href="#" class="img"><img src="./img/logo_yonago_orange.png" alt=""></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2022 YONAGO CONTENTS FACRTORY.COM ALL RIGHTS RESERVED 米子コンテンツ工場</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="./js/menu.js" type="text/javascript"></script>
 </body>
 
 </html>
