@@ -1,5 +1,6 @@
 @use "style"as *;
-// @use "general"as *;
+@use "variables"as *;
+
 
 html {
   margin: 0;
@@ -18,16 +19,19 @@ main {
 
 
 .about-sec1 {
-  & h2{
+  & h2 {
     margin-bottom: calc((114 / 1920)*100vw);
   }
+
   & .sec-lead {
     text-align: center;
     margin-bottom: calc((110 / 1920)*100vw);
   }
-  &-info{
+
+  &-info {
     border: 2px solid #f3dd24;
-    & ul{
+
+    & ul {
       display: flex;
       padding: calc((40 / 1920)*100vw) calc((64 / 1920)*100vw);
       justify-content: space-between;
@@ -36,7 +40,7 @@ main {
 }
 
 
-.about-sec2{
+.about-sec2 {
   & .content-half {
 
     &-item {

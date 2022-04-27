@@ -1,51 +1,47 @@
+@charset "UTF-8";
 /*!---------------------------------
     sub-header
 ---------------------------------*/
 .sub-header {
   text-align: center;
-
-  & h1 {
-    margin: calc((118 / 1920)*100vw) 0;
-  }
 }
-
+.sub-header h1 {
+  margin: calc((118 / 1920)*100vw) 0;
+}
 
 /*!---------------------------------
     基本コンテントエリア
 ---------------------------------*/
 .sub-content-area {
   background: #fff;
-
-  &-img-L {
-    margin-bottom: calc((60 / 1920)*100vw);
-  }
 }
-
+.sub-content-area-img-L {
+  margin-bottom: calc((60 / 1920)*100vw);
+}
 
 /*!---------------------------------
     コンテント幅 
 ---------------------------------*/
 .inner {
   padding: 0 calc((((1920 - 1640) / 1920)/2)*100vw);
-
 }
 
-.sub-inner--wide {
+.sub-inner {
   width: calc((1640 /1920)*100vw);
   min-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-
-  padding: calc((120 / 1920)*100vw) 0;
 }
 
 /*!---------------------------------
     半分ずつレイアウト
 ---------------------------------*/
 .content-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
-  &-item {
-    width: 50%;
-  }
 }
+.content-half-item {
+  width: 50%;
+}
+/*# sourceMappingURL=_layout.css.map */

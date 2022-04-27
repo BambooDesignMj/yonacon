@@ -1,0 +1,66 @@
+/*!---------------------------------
+    変数
+---------------------------------*/
+
+$base-green: #31a6a2;
+$base-yellow: #fffaec;
+$base-pink:#ff6c88;
+
+$content-width: 1640px;
+$sub-content-width: 1430px;
+
+
+/*!---------------------------------
+    引数 
+---------------------------------*/
+
+/*メディアクエリ */
+$sp-s: 330px;
+$sp: 890px;
+$pc: 801px;
+$lg: 992px;
+$mini-pc: 1100px;
+$av: 1400px;
+$xl: 1600px;
+
+@mixin sp-s {
+  @media (max-width: ($sp-s)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+
+@mixin mini-pc {
+  @media (max-width: ($mini-pc)) {
+    @content;
+  }
+}
+
+@mixin av {
+  @media (max-width: ($av)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}

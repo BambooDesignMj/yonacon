@@ -641,10 +641,3 @@ html {
 address {
   font-style: normal;
 }
-
-/*
- * main 余白対策
- */
-main {
-  overflow: hidden;
-}

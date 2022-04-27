@@ -1,11 +1,4 @@
-/*!---------------------------------
-    変数
----------------------------------*/
-
-$base-green: #31a6a2;
-$base-yellow: #fffaec;
-$base-pink:#ff6c88;
-
+@use "variables-mixin"as *;
 
 /*!---------------------------------
 
@@ -15,7 +8,7 @@ $base-pink:#ff6c88;
   background: #fff;
   margin: calc((120 / 1920)*100vw) 0;
 
-  .sub-inner {
+  .sub-inner--wide {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -46,7 +39,7 @@ $base-pink:#ff6c88;
     & h3 {
       color: #fff;
       margin: 0;
-      line-height:1;
+      line-height: 1;
       padding-top: 0.1em;
 
       &::after {

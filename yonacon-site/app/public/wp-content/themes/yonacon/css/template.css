@@ -1,1 +1,374 @@
-@use "general"
+@charset "UTF-8";
+/*!---------------------------------
+    変数
+---------------------------------*/
+/*!---------------------------------
+    引数 
+---------------------------------*/
+/*メディアクエリ */
+/*!
+ フォント、リンク、ボタンに関するcss
+*/
+/*!---------------------------------
+    フォント
+---------------------------------*/
+h1 {
+  font-size: 72px;
+  font-size: clamp(((72 * 0.7)*1px), calc((72 / 1920)*100vw), 72px);
+  color: #31a6a2;
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 48px;
+  font-size: clamp(((48 * 0.7)*1px), calc((48 / 1920)*100vw), 48px);
+  color: #31a6a2;
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 36px;
+  font-size: clamp(((36 * 0.7)*1px), calc((36 / 1920)*100vw), 36px);
+  color: #31a6a2;
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 30px;
+  font-size: clamp(((30 * 0.7)*1px), calc((30 / 1920)*100vw), 30px);
+  color: #31a6a2;
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5 {
+  font-size: 24px;
+  font-size: clamp(((24 * 0.7)*1px), calc((24 / 1920)*100vw), 24px);
+  letter-spacing: 0.05em;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p,
+a {
+  font-size: 18px;
+  font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
+  color: #333333;
+  line-height: 1.75;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.p-mini {
+  font-size: 16px;
+  font-size: clamp(((16 * 0.7)*1px), calc((16 / 1920)*100vw), 16px);
+  color: #333333;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p span {
+  display: inline-block;
+}
+
+/*!---------------------------------
+    リンク　ボタン
+---------------------------------*/
+a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 890px) {
+  a:hover {
+    pointer-events: none;
+  }
+}
+
+.contact_btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  display: inline-block;
+  background-color: #ff6c88;
+  padding: 0.5rem 1.5rem;
+  border: solid 2px #ff6c88;
+  border-radius: 50px;
+  text-decoration: none;
+  /*アニメーションの指定*/
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.contact_btn div {
+  color: #fff;
+  font-family: Heisei Kaku Gothic Std W7;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+}
+
+.contact_btn:hover div {
+  color: #ff6c88;
+}
+
+.wbg_btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  display: inline-block;
+  background-color: #31a6a2;
+  padding: 0.5rem 3rem;
+  border: solid 2px #31a6a2;
+  border-radius: 10px;
+  text-decoration: none;
+  /*アニメーションの指定*/
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.wbg_btn div {
+  color: #fff;
+  font-family: Heisei Kaku Gothic Std W7;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+}
+
+.wbg_btn:hover div {
+  color: #31a6a2;
+}
+
+/*ボタンホバー背景共通*/
+.bgleft:before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /*色や形状*/
+  background: #fff;
+  /*背景色*/
+  width: 100%;
+  height: 100%;
+  /*アニメーション*/
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.bgleft:hover:before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.door_btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  width: 24px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+}
+.door_btn img:nth-of-type(1) {
+  opacity: 0;
+}
+
+.door_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.door_btn:hover {
+  content: url(../img/door_op.png);
+}
+
+.point_btn {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.point_btn:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  margin-top: -9px;
+  -webkit-box-shadow: 2px 1px 3px gray;
+          box-shadow: 2px 1px 3px gray;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: -webkit-transform 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transition: transform 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s, -webkit-transform 0.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.point_btn:after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  border: 0;
+  border-top: solid 3px #31a6a2;
+  border-right: solid 3px #31a6a2;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  margin-top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.point_btn:hover:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #31a6a2;
+  border-radius: 50%;
+  top: 50%;
+  left: -3px;
+  margin-top: -9px;
+  -webkit-box-shadow: 2px 1px 3px gray;
+          box-shadow: 2px 1px 3px gray;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.point_btn:hover:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
+  top: 50%;
+  left: 40%;
+  margin-top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/*! 画像がリンク、ボタンの場合
+====================================================*/
+a.img:before {
+  content: none;
+}
+
+a.btn::before {
+  content: none;
+}
+
+/*! 電話
+====================================================*/
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+/*! pc sp
+====================================================*/
+#pc {
+  display: block;
+}
+@media (max-width: 890px) {
+  #pc {
+    display: none;
+  }
+}
+
+#pc-df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 890px) {
+  #pc-df {
+    display: none;
+  }
+}
+
+#sp {
+  display: none;
+}
+@media (max-width: 890px) {
+  #sp {
+    display: block;
+  }
+}
+
+#sp-dg {
+  display: none;
+}
+@media (max-width: 890px) {
+  #sp-dg {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+#sp-df {
+  display: none;
+}
+@media (max-width: 890px) {
+  #sp-df {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#sp-dib {
+  display: none;
+}
+@media (max-width: 890px) {
+  #sp-dib {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=template.css.map */

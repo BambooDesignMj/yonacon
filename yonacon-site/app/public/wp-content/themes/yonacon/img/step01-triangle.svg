@@ -1,0 +1,17 @@
+<svg id="step01-triangle.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1360.497" height="274.97" viewBox="0 0 1360.497 274.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="53.563" y="3283" width="1360.497" height="274.97" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fffaec"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="三角形_1" data-name="三角形 1" class="cls-1" d="M733.812,3283l680.248,274.97H53.563Z" transform="translate(-53.563 -3283)"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg id="side-cta.svg" xmlns="http://www.w3.org/2000/svg" width="74" height="503" viewBox="0 0 74 503">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6c88;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #ff6c88;
+        stroke-linecap: round;
+        stroke-linejoin: bevel;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        writing-mode: tb;
+        glyph-orientation-vertical: 0;
+        font-size: 13.053px;
+        text-anchor: middle;
+        font-family: HeiseiKakuGoStd-W7, "Heisei Kaku Gothic Std";
+      }
+
+      .cls-5 {
+        font-size: 10.878px;
+      }
+    </style>
+  </defs>
+  <path id="長方形_38" data-name="長方形 38" class="cls-1" d="M1779.99,3376v503.01H1736a30,30,0,0,1-30-30V3406a30,30,0,0,1,30-30h43.99Z" transform="translate(-1706 -3376)"/>
+  <circle id="楕円形_25" data-name="楕円形 25" class="cls-2" cx="37.5" cy="441.5" r="20.5"/>
+  <path id="線_7_のコピー_2" data-name="線 7 のコピー 2" class="cls-3" d="M1738.83,3806.83l10.34,10.34Zm10.45,9.89-10.56,10.56Z" transform="translate(-1706 -3376)"/>
+  <text id="よくある質問_はこちら" data-name="よくある質問 はこちら" class="cls-4" transform="matrix(2.754, 0, 0, 2.758, 39.148, 221.436)">よくある質問<tspan class="cls-5"> はこちら</tspan></text>
+</svg>

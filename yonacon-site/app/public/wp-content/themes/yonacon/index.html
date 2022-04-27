@@ -29,7 +29,7 @@
           </li>
         </div>
         <div class="nav-ul-r">
-          <li><a href="#">米コンとは</a></li>
+          <li><a href="/about/">米コンとは</a></li>
           <li><a href="#">よくあるご質問</a></li>
           <li><a href="#">制作実績</a></li>
           <li><a href="#">ブログ</a></li>
@@ -48,7 +48,7 @@
       </div>
       <nav class="navsp">
         <ul>
-          <li><a href="#">米コンとは</a></li>
+          <li><a href="/about/">米コンとは</a></li>
           <li><a href="#">よくあるご質問</a></li>
           <li><a href="#">制作実績</a></li>
           <li><a href="#">ブログ</a></li>
@@ -61,18 +61,29 @@
   <!-- /header -->
   <main>
     <div class="mv">
-      <img src="./img/mv-pc.jpg" alt="">
+      <img src="./img/mv-pc.jpg" alt="" id="pc">
+      <img src="./img/mv-sp.jpg" alt="" id="sp">
+    </div>
+    <div class="cta-fixed--right">
+      <span>
+        <a href="#"><img src="./img/side-cta.svg" alt=""></a>
+        <img src="./img/yona-side-cta.png" alt="" class="yona-side-cta">
+        </spa>
     </div>
     <div class="post-mv">
       <div class="post-mv-inner">
         <div class="post-mv-l">
           <p>米子コンテンツ工場（通称：米コン）は、デジタルハリウッドSTUDIO米子の卒業生で結成されたクリエイターチームです。
           </p>
+          <p id="sp">webサイト制作・印刷物制作・イベント企画などを通し
+            て、世界一あなたに寄り添いながら、「面白い企画」
+            や「やってみたい！」を実現するものづくりのお手伝い
+            を致します。</p>
         </div>
         <div class="post-mv-r">
           <div class="post-mv-r-about">
             <div class="door_btn_wrapper">
-              <img src="./img/cta-b4-motto.png" alt="" class="cta-b4-motto">
+              <p class="cta-b4-motto"><img src="./img/cta-b4-motto.png" alt=""></p>
               <a href="#">
                 <div class="door_btn_txt">
                   <p>米コン<span>についてはこちら</span></p>
@@ -100,15 +111,32 @@
     <div class="index-content-sidebar">
       <div class="index-content">
         <div class="works">
-          <div class="index-inner">
+          <div class="index-inner inner">
             <div class="index-sec-ttl">
               <img src="./img/works.png" alt="">
               <h1>制作実績</h1>
             </div>
-            <div class="works-img">
-              <figure>
-
-              </figure>
+            <div class="works-img-wrapper">
+              <div class="works-img">
+                <a href="#" class="previous"></a>
+                <div class="index-thumbnail-frame">
+                  <div class="index-thumbnail">
+                    <img src="./img/works-thumbnail.png" alt="">
+                  </div>
+                </div>
+                <a href="" class="next"></a>
+              </div>
+              <div class="works-img-btn">
+                <div class="door_btn_wrapper">
+                  <a href="#">
+                    <div class="door_btn_txt">
+                      <p>制作実績一覧<span>についてはこちら</span></p>
+                      <img src="./img/door_btn_arrow.png" alt="">
+                    </div>
+                    <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -173,11 +201,13 @@
           </div>
         </div>
         <!-- /.process -->
-        <div class="cta-sec">
-          <img src="./img/cta-b4-sassoku.png" alt="" class="ballon">
-          <a href="#" class="contact_btn bgleft">
-            <div>お問い合わせ<span>&rang;</span></div>
-          </a>
+        <div class="index-inner">
+          <div class="cta-sec">
+            <img src="./img/cta-b4-sassoku.png" alt="" class="ballon">
+            <a href="#" class="contact_btn bgleft">
+              <div>お問い合わせ<span>&rang;</span></div>
+            </a>
+          </div>
         </div>
         <!-- /.cta-sec -->
         <div class="price">
@@ -216,7 +246,7 @@
                 <div class="door_btn_wrapper">
                   <a href="#">
                     <div class="door_btn_txt">
-                      <p>詳しい流れ<span>についてはこちら</span></p>
+                      <p>料金<span>についてはこちら</span></p>
                       <img src="./img/door_btn_arrow.png" alt="">
                     </div>
                     <img src="img/door_cl.png" alt="door_close" class="door_btn">
@@ -265,22 +295,49 @@
             </form>
           </div>
           <div class="sidebar-blog">
-            <div class="sidebar-blog-new">
+            <div class="sidebar-blog-item">
               <h5>ブログ（新着順）</h5>
               <ol>
                 <li>
                   <img src="./img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
-                  <p>ああああああああああああああああああああ
+                  <p>あああああああああああああああああああああああああ
                   </p>
                 </li>
                 <li>
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>あああああああああああああああああああああああああ
+                  </p>
                 </li>
                 <li>
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>あああああああああああああああああああああああああ
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div class="sidebar-blog-item sidebar-blog-item--popular">
+              <h5>ブログ（人気順）</h5>
+              <ol>
+                <li>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>あああああああああああああああああああああああああ
+                  </p>
+                </li>
+                <li>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>あああああああああああああああああああああああああ
+                  </p>
+                </li>
+                <li>
+                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <time datetime="#">2022/22/22</time>
+                  <p>あああああああああああああああああああああああああ
+                  </p>
                 </li>
               </ol>
             </div>
@@ -324,8 +381,10 @@
       <div class="footer-low">
         <div class="footer-low-l">
           <ul>
-            <li><a href="#" class="img"><img src="./img/twitter.png" alt=""></a></li>
-            <li><a href="#" class="img"><img src="./img/instagram.png" alt=""></a></li>
+            <span>
+              <li class="twitter"><a href="#" class="img"><img src="./img/twitter.png" alt=""></a></li>
+              <li><a href="#" class="img"><img src="./img/instagram.png" alt=""></a></li>
+            </span>
             <li class="email"><a href="mailto:yonagofactory@gmail.com">yonagofactory@gmail.com</a></li>
           </ul>
         </div>
@@ -333,9 +392,10 @@
           <a href="#" class="img"><img src="./img/logo_yonago_orange.png" alt=""></a>
         </div>
       </div>
-      <div class="copyright">
-        <p>© 2022 YONAGO CONTENTS FACRTORY.COM ALL RIGHTS RESERVED 米子コンテンツ工場</p>
-      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2022 YONAGO CONTENTS FACRTORY.COM <span>ALL RIGHTS RESERVED 米子コンテンツ工場</spa>
+      </p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

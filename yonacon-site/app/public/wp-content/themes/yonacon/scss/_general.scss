@@ -1,6 +1,13 @@
-/*!
-  引数、変数、フォント、リンク、ボタンに関するcss
-*/
+/*!---------------------------------
+    変数
+---------------------------------*/
+
+$base-green: #31a6a2;
+$base-yellow: #fffaec;
+$base-pink:#ff6c88;
+
+$content-width: 1640px;
+$sub-content-width: 1430px;
 
 
 /*!---------------------------------
@@ -9,10 +16,10 @@
 
 /*メディアクエリ */
 $sp-s: 330px;
-$sp: 800px;
+$sp: 890px;
 $pc: 801px;
 $lg: 992px;
-$mini-pc: 1300px;
+$mini-pc: 1100px;
 $av: 1400px;
 $xl: 1600px;
 
@@ -59,19 +66,9 @@ $xl: 1600px;
 }
 
 
-/*!---------------------------------
-    変数
----------------------------------*/
-
-$base-green: #31a6a2;
-$base-yellow: #fffaec;
-$base-pink:#ff6c88;
-
-$content-width: 1640px;
-$sub-content-width: 1430px;
-
-
-
+/*!
+ フォント、リンク、ボタンに関するcss
+*/
 
 /*!---------------------------------
     フォント
@@ -125,11 +122,11 @@ h5 {
   font-style: normal;
 }
 
-p {
+p,
+a {
   font-size: 18px;
   font-size: clamp(((18 * 0.7)*1px), calc((18 / 1920)*100vw), 18px);
   color: #333333;
-  // letter-spacing: 0.05em;
   line-height: 1.75;
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 500;
@@ -299,6 +296,7 @@ a:hover {
   padding-left: 20px;
   text-decoration: none;
 }
+
 .point_btn:before {
   content: '';
   width: 40px;
@@ -311,9 +309,10 @@ a:hover {
   margin-top: -9px;
   box-shadow: 2px 1px 3px gray;
   transition: transform .3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-transform: scale(0, 0);
-transform-origin:center;
+  transform: scale(0, 0);
+  transform-origin: center;
 }
+
 .point_btn:after {
   content: '';
   width: 1px;
@@ -327,6 +326,7 @@ transform-origin:center;
   margin-top: 9px;
   transform: rotate(45deg);
 }
+
 //点ボタン：ホバー時矢印
 .point_btn:hover:before {
   content: '';
@@ -338,8 +338,9 @@ transform-origin:center;
   left: -3px;
   margin-top: -9px;
   box-shadow: 2px 1px 3px gray;
-  transform:scale(1, 1);
+  transform: scale(1, 1);
 }
+
 .point_btn:hover:after {
   content: '';
   width: 9px;
