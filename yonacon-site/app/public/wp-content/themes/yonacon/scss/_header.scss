@@ -20,8 +20,9 @@ header {
   min-width: 1100px;
 
   @include sp {
-    height: 50px;
     min-width: initial;
+    top: 0;
+    height: 50px;
   }
 
   & .nav {
@@ -115,10 +116,11 @@ header {
 
   &-wrapper {
     background: $base-green;
-    height: 70px;
+    height: 60px;
     padding-left: 20px;
     padding-right: 20px;
     position: fixed;
+    top: 0;
     width: 100%;
 
     & h1 {

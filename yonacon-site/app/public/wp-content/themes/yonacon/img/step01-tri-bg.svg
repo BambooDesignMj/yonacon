@@ -1,0 +1,30 @@
+<svg id="step01-bg.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1375.09" height="614.91" viewBox="0 0 1375.09 614.91">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="49" y="3557.97" width="1375.09" height="339.94" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fffaec"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="53.563" y="3283" width="1360.497" height="274.97" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fffaec"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="長方形_1" data-name="長方形 1" class="cls-1" d="M49,3557.96H1424.09v339.96H49V3557.96Z" transform="translate(-49 -3283)"/>
+  <path id="三角形_1" data-name="三角形 1" class="cls-2" d="M733.812,3283l680.248,274.97H53.563Z" transform="translate(-49 -3283)"/>
+</svg>

@@ -17,7 +17,7 @@ $sub-content-width: 1430px;
 /*メディアクエリ */
 $sp-s: 330px;
 $sp: 890px;
-$pc: 801px;
+$pc: 891px;
 $lg: 992px;
 $mini-pc: 1100px;
 $av: 1400px;
@@ -81,6 +81,10 @@ h1 {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 700;
   font-style: normal;
+
+  @include sp {
+    font-size: 24px;
+  }
 }
 
 h2 {
@@ -101,6 +105,10 @@ h3 {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 700;
   font-style: normal;
+
+  @include sp {
+    font-size: 24px;
+  }
 }
 
 h4 {
@@ -111,6 +119,10 @@ h4 {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 700;
   font-style: normal;
+
+  @include sp {
+    font-size: 20px;
+  }
 }
 
 h5 {
@@ -120,6 +132,10 @@ h5 {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 700;
   font-style: normal;
+
+  @include sp {
+    font-size: 15px;
+  }
 }
 
 p,
@@ -131,6 +147,10 @@ a {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 500;
   font-style: normal;
+
+  @include sp {
+    font-size: 16px;
+  }
 }
 
 .p-mini {
@@ -142,6 +162,15 @@ a {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 300;
   font-style: normal;
+
+  @include sp {
+    font-size: 14px;
+  }
+}
+
+div {
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 500;
 }
 
 p {
@@ -165,7 +194,7 @@ a:hover {
   opacity: 0.8;
 
   @include sp {
-    pointer-events: none;
+    opacity: initial;
   }
 }
 
@@ -186,7 +215,7 @@ a:hover {
 
   div {
     color: #fff;
-    font-family: Heisei Kaku Gothic Std W7;
+    font-family: heisei-kaku-gothic-std, sans-serif;
     position: relative;
     z-index: 3;
     /*z-indexの数値をあげて文字を背景よりも手前に表示*/
@@ -196,10 +225,13 @@ a:hover {
   transition: ease .2s;
 }
 
-.contact_btn:hover {
-  div {
-    color: #ff6c88;
+@include pc {
+  .contact_btn:hover {
+    div {
+      color: #ff6c88;
+    }
   }
+
 }
 
 //白青緑ボタン　　竹歳追加
@@ -217,7 +249,7 @@ a:hover {
 
   div {
     color: #fff;
-    font-family: Heisei Kaku Gothic Std W7;
+    font-family: heisei-kaku-gothic-std, sans-serif;
     position: relative;
     z-index: 3;
     /*z-indexの数値をあげて文字を背景よりも手前に表示*/
@@ -227,11 +259,14 @@ a:hover {
   transition: ease .2s;
 }
 
-.wbg_btn:hover {
-  div {
-    color: #31a6a2;
+@include pc {
+  .wbg_btn:hover {
+    div {
+      color: #31a6a2;
+    }
   }
 }
+
 
 /*ボタンホバー背景共通*/
 .bgleft:before {
@@ -253,10 +288,12 @@ a:hover {
 }
 
 /*hoverした際の形状*/
-.bgleft:hover:before {
-  transform-origin: left top;
-  transform: scale(1, 1);
-}
+  .bgleft:hover:before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+
+
 
 //ドアボタン
 .door_btn {
@@ -284,9 +321,12 @@ a:hover {
   transition: .4s ease-in-out;
 }
 
-.door_btn:hover {
-  content: url(../img/door_op.png);
+@include pc{
+  .door_btn:hover {
+    content: url(../img/door_op.png);
+  }
 }
+
 
 //点ボタン
 //点ボタン
@@ -328,30 +368,33 @@ a:hover {
 }
 
 //点ボタン：ホバー時矢印
-.point_btn:hover:before {
-  content: '';
-  width: 40px;
-  height: 40px;
-  background: #31a6a2;
-  border-radius: 50%;
-  top: 50%;
-  left: -3px;
-  margin-top: -9px;
-  box-shadow: 2px 1px 3px gray;
-  transform: scale(1, 1);
-}
+  .point_btn:hover:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #31a6a2;
+    border-radius: 50%;
+    top: 50%;
+    left: -3px;
+    margin-top: -9px;
+    box-shadow: 2px 1px 3px gray;
+    transform: scale(1, 1);
+  }
+  
+  .point_btn:hover:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+    top: 50%;
+    left: 40%;
+    margin-top: 5px;
+    transform: rotate(45deg);
+  }
 
-.point_btn:hover:after {
-  content: '';
-  width: 9px;
-  height: 9px;
-  border-top: solid 3px #fff;
-  border-right: solid 3px #fff;
-  top: 50%;
-  left: 40%;
-  margin-top: 5px;
-  transform: rotate(45deg);
-}
+
+
 
 
 /*! 画像がリンク、ボタンの場合

@@ -21,6 +21,11 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
+@media (max-width: 890px) {
+  h1 {
+    font-size: 24px;
+  }
+}
 
 h2 {
   font-size: 48px;
@@ -41,6 +46,11 @@ h3 {
   font-weight: 700;
   font-style: normal;
 }
+@media (max-width: 890px) {
+  h3 {
+    font-size: 24px;
+  }
+}
 
 h4 {
   font-size: 30px;
@@ -51,6 +61,11 @@ h4 {
   font-weight: 700;
   font-style: normal;
 }
+@media (max-width: 890px) {
+  h4 {
+    font-size: 20px;
+  }
+}
 
 h5 {
   font-size: 24px;
@@ -59,6 +74,11 @@ h5 {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+@media (max-width: 890px) {
+  h5 {
+    font-size: 15px;
+  }
 }
 
 p,
@@ -71,6 +91,12 @@ a {
   font-weight: 500;
   font-style: normal;
 }
+@media (max-width: 890px) {
+  p,
+a {
+    font-size: 16px;
+  }
+}
 
 .p-mini {
   font-size: 16px;
@@ -81,6 +107,16 @@ a {
   font-family: heisei-kaku-gothic-std, sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+@media (max-width: 890px) {
+  .p-mini {
+    font-size: 14px;
+  }
+}
+
+div {
+  font-family: heisei-kaku-gothic-std, sans-serif;
+  font-weight: 500;
 }
 
 p span {
@@ -102,7 +138,7 @@ a:hover {
 }
 @media (max-width: 890px) {
   a:hover {
-    pointer-events: none;
+    opacity: initial;
   }
 }
 
@@ -123,16 +159,17 @@ a:hover {
 }
 .contact_btn div {
   color: #fff;
-  font-family: Heisei Kaku Gothic Std W7;
+  font-family: heisei-kaku-gothic-std, sans-serif;
   position: relative;
   z-index: 3;
   /*z-indexの数値をあげて文字を背景よりも手前に表示*/
 }
 
-.contact_btn:hover div {
-  color: #ff6c88;
+@media (min-width: 891px) {
+  .contact_btn:hover div {
+    color: #ff6c88;
+  }
 }
-
 .wbg_btn {
   /*アニメーションの起点とするためrelativeを指定*/
   position: relative;
@@ -150,16 +187,17 @@ a:hover {
 }
 .wbg_btn div {
   color: #fff;
-  font-family: Heisei Kaku Gothic Std W7;
+  font-family: heisei-kaku-gothic-std, sans-serif;
   position: relative;
   z-index: 3;
   /*z-indexの数値をあげて文字を背景よりも手前に表示*/
 }
 
-.wbg_btn:hover div {
-  color: #31a6a2;
+@media (min-width: 891px) {
+  .wbg_btn:hover div {
+    color: #31a6a2;
+  }
 }
-
 /*ボタンホバー背景共通*/
 .bgleft:before {
   content: "";
@@ -217,10 +255,11 @@ a:hover {
   transition: 0.4s ease-in-out;
 }
 
-.door_btn:hover {
-  content: url(../img/door_op.png);
+@media (min-width: 891px) {
+  .door_btn:hover {
+    content: url(../img/door_op.png);
+  }
 }
-
 .point_btn {
   position: relative;
   display: inline-block;
