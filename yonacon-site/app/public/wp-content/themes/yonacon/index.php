@@ -6,17 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
   <script>
-    (function (d) {
+    (function(d) {
       var config = {
-        kitId: 'vkh0ows',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+          kitId: 'vkh0ows',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -25,7 +46,7 @@
       <ul class="nav-ul">
         <div class="nav-ul-l">
           <li>
-            <h1><a href="#"><img src="./img/logo.svg" alt="米子コンテンツ工場"></a></h1>
+            <h1><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="米子コンテンツ工場"></a></h1>
           </li>
         </div>
         <div class="nav-ul-r">
@@ -40,7 +61,7 @@
     </nav>
     <!--  -->
     <div class="navsp-wrapper" id="sp">
-      <h1><a href="#"><img src="./img/logo.svg" alt="米子コンテンツ工場"></a></h1>
+      <h1><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="米子コンテンツ工場"></a></h1>
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -61,13 +82,13 @@
   <!-- /header -->
   <main>
     <div class="mv">
-      <img src="./img/mv-pc.jpg" alt="" id="pc">
-      <img src="./img/mv-sp.jpg" alt="" id="sp">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/mv-pc.jpg" alt="" id="pc">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/mv-sp.jpg" alt="" id="sp">
     </div>
     <div class="cta-fixed--right">
       <span>
-        <a href="#"><img src="./img/side-cta.svg" alt=""></a>
-        <img src="./img/yona-side-cta.png" alt="" class="yona-side-cta">
+        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/side-cta.svg" alt=""></a>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/yona-side-cta.png" alt="" class="yona-side-cta">
         </spa>
     </div>
     <div class="post-mv">
@@ -83,13 +104,13 @@
         <div class="post-mv-r">
           <div class="post-mv-r-about">
             <div class="door_btn_wrapper">
-              <p class="cta-b4-motto"><img src="./img/cta-b4-motto.png" alt=""></p>
+              <p class="cta-b4-motto"><img src="<?php echo get_template_directory_uri(); ?>/img/cta-b4-motto.png" alt=""></p>
               <a href="#">
                 <div class="door_btn_txt">
                   <p>米コン<span>についてはこちら</span></p>
-                  <img src="./img/door_btn_arrow.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                 </div>
-                <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
               </a>
             </div>
           </div>
@@ -97,10 +118,10 @@
             <div class="door_btn_wrapper">
               <a href="#">
                 <div class="door_btn_txt">
-                  <img src="./img/logo_yonago_orange.png" alt="" class="door_btn-dhw">
-                  <img src="./img/door_btn_arrow.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/logo_yonago_orange.png" alt="" class="door_btn-dhw">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                 </div>
-                <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
               </a>
             </div>
           </div>
@@ -123,19 +144,19 @@
               <h5>ブログ（新着順）</h5>
               <ol>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
                 </li>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
                 </li>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
@@ -146,19 +167,19 @@
               <h5>ブログ（人気順）</h5>
               <ol>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
                 </li>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
                 </li>
                 <li>
-                  <img src="./img/blog-thumbnail.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog-thumbnail.jpg" alt="">
                   <time datetime="#">2022/22/22</time>
                   <p>あああああああああああああああああああああああああ
                   </p>
@@ -173,7 +194,7 @@
         <div class="works">
           <div class="index-inner inner">
             <div class="index-sec-ttl">
-              <img src="./img/works.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/works.png" alt="">
               <h1>制作実績</h1>
             </div>
             <div class="works-img-wrapper">
@@ -181,7 +202,7 @@
                 <a href="#" class="previous"></a>
                 <div class="index-thumbnail-frame">
                   <div class="index-thumbnail">
-                    <img src="./img/works-thumbnail.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/works-thumbnail.png" alt="">
                   </div>
                 </div>
                 <a href="" class="next"></a>
@@ -191,9 +212,9 @@
                   <a href="#">
                     <div class="door_btn_txt">
                       <p>制作実績一覧<span>についてはこちら</span></p>
-                      <img src="./img/door_btn_arrow.png" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                     </div>
-                    <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
                   </a>
                 </div>
               </div>
@@ -204,57 +225,57 @@
         <div class="process">
           <div class="index-process-inner index-inner">
             <div class="index-sec-ttl">
-              <img src="./img/process.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/process.png" alt="">
               <h1>依頼から納品まで</h1>
               <h5>あなたの想いが形になるまで</h5>
             </div>
             <div class="step-box step01">
               <div class="step-box-l">
-                <h2><img src="./img/step01-ttl.png" alt=""></h2>
+                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/step01-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step01-illust.png" alt="" class="step01-illust">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/step01-illust.png" alt="" class="step01-illust">
               </div>
             </div>
             <!-- /.step01 -->
             <div class="step-box step02">
               <div class="step-box-l">
-                <h2><img src="./img/step02-ttl.png" alt=""></h2>
+                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/step02-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step02-illust.png" alt="" class="step02-illust">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/step02-illust.png" alt="" class="step02-illust">
               </div>
             </div>
             <!-- /.step02 -->
             <div class="step-box step03">
               <div class="step-box-l">
-                <h2><img src="./img/step03-ttl.png" alt=""></h2>
+                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/step03-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step03-illust.png" alt="" class="step01-illust">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/step03-illust.png" alt="" class="step01-illust">
               </div>
             </div>
             <!-- /.step03 -->
             <div class="step-box step04">
               <div class="step-box-l">
-                <h2><img src="./img/step04-ttl.png" alt=""></h2>
+                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/step04-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step04-illust.png" alt="" class="step04-illust">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/step04-illust.png" alt="" class="step04-illust">
               </div>
             </div>
             <!-- /.step04 -->
             <div class="step-box step05">
               <div class="step-box-l">
-                <h2><img src="./img/step05-ttl.png" alt=""></h2>
+                <h2><img src="<?php echo get_template_directory_uri(); ?>/img/step05-ttl.png" alt=""></h2>
               </div>
               <div class="step-box-r">
                 <p>相談後、お見積もりをいたします。</p>
-                <img src="./img/step05-illust.png" alt="" class="step05-illust">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/step05-illust.png" alt="" class="step05-illust">
               </div>
             </div>
             <!-- /.step04 -->
@@ -263,7 +284,7 @@
         <!-- /.process -->
         <div class="index-inner">
           <div class="cta-sec">
-            <img src="./img/cta-b4-sassoku.png" alt="" class="ballon">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cta-b4-sassoku.png" alt="" class="ballon">
             <a href="#" class="contact_btn bgleft">
               <div>お問い合わせ<span>&rang;</span></div>
             </a>
@@ -273,43 +294,43 @@
         <div class="price">
           <div class="index-inner price-index-inner">
             <div class="index-sec-ttl">
-              <img src="./img/priceflow.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/priceflow.png" alt="">
               <h1>料金・詳しい流れ</h1>
               <p>米子コンテンツ工場では明確な料金表や料金プランを提示しておりません。<br>
                 だからこそ、まずは丁寧な打ち合わせをもとにお見積もりをさせていただきます。</p>
             </div>
             <div class="price-content content-half">
               <div class="content-half-item">
-                <img src="./img/price-kuwashii.png" alt="" class="price-ballon">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/price-kuwashii.png" alt="" class="price-ballon">
                 <div class="index-thumbnail-frame">
                   <div class="index-thumbnail">
-                    <img src="./img/index-thumbnail.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/index-thumbnail.png" alt="">
                   </div>
                 </div>
                 <div class="door_btn_wrapper">
                   <a href="#">
                     <div class="door_btn_txt">
                       <p>詳しい流れ<span>についてはこちら</span></p>
-                      <img src="./img/door_btn_arrow.png" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                     </div>
-                    <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
                   </a>
                 </div>
               </div>
               <div class="content-half-item">
-                <img src="./img/price-ryoukin.png" alt="" class="price-ballon">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/price-ryoukin.png" alt="" class="price-ballon">
                 <div class="index-thumbnail-frame">
                   <div class="index-thumbnail">
-                    <img src="./img/index-thumbnail.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/index-thumbnail.png" alt="">
                   </div>
                 </div>
                 <div class="door_btn_wrapper">
                   <a href="#">
                     <div class="door_btn_txt">
                       <p>料金<span>についてはこちら</span></p>
-                      <img src="./img/door_btn_arrow.png" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                     </div>
-                    <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
                   </a>
                 </div>
               </div>
@@ -320,23 +341,23 @@
         <div class="member">
           <div class="index-inner member-index-inner">
             <div class="index-sec-ttl">
-              <img src="./img/member.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/member.png" alt="">
               <h1>メンバー</h1>
               <p>米子コンテンツ工場にはさまざまなメンバーが所属しています。</p>
             </div>
             <div class="member-content content-half">
               <div class="index-thumbnail-frame">
                 <div class="index-thumbnail">
-                  <img src="./img/member-thumbnail.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/member-thumbnail.png" alt="">
                 </div>
               </div>
               <div class="door_btn_wrapper">
                 <a href="#">
                   <div class="door_btn_txt">
                     <p>メンバー一覧<span>についてはこちら</span></p>
-                    <img src="./img/door_btn_arrow.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/door_btn_arrow.png" alt="">
                   </div>
-                  <img src="img/door_cl.png" alt="door_close" class="door_btn">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/door_cl.png" alt="door_close" class="door_btn">
                 </a>
               </div>
             </div>
@@ -352,14 +373,14 @@
       <div class="index-bottom-cta-inner">
         <div class="cta-sec">
           <span>
-            <img src="./img/cta-b4-yoshi.png" alt="" class="ballon">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cta-b4-yoshi.png" alt="" class="ballon">
             <a href="#" class="contact_btn bgleft">
               <div>お問い合わせ<span>&rang;</span></div>
             </a>
             </spa>
         </div>
         <div class="name-address">
-          <p><img src="./img/logo-horizontal.svg" alt=""></p>
+          <p><img src="<?php echo get_template_directory_uri(); ?>/img/logo-horizontal.svg" alt=""></p>
           <address>〒683-0812<br>
             鳥取県米子市角盤町1-55-2<br>
             中海テレビ放送センタービル2階<br>
@@ -385,14 +406,14 @@
         <div class="footer-low-l">
           <ul>
             <span>
-              <li class="twitter"><a href="#" class="img"><img src="./img/twitter.png" alt=""></a></li>
-              <li><a href="#" class="img"><img src="./img/instagram.png" alt=""></a></li>
+              <li class="twitter"><a href="#" class="img"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt=""></a></li>
+              <li><a href="#" class="img"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt=""></a></li>
             </span>
             <li class="email"><a href="mailto:yonagofactory@gmail.com">yonagofactory@gmail.com</a></li>
           </ul>
         </div>
         <div class="footer-low-r">
-          <a href="#" class="img"><img src="./img/logo_yonago_orange.png" alt=""></a>
+          <a href="#" class="img"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_yonago_orange.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -401,9 +422,9 @@
       </p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="./js/menu.js" type="text/javascript"></script>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
